@@ -146,9 +146,3 @@ Le système Pub/Sub permet une communication en temps réel entre émetteurs (Pu
 | `SELECT <numéro>` | Change la base de données active (Redis en propose 16, de 0 à 15). |
 | `FLUSHDB` | Supprime **toutes** les clés de la base de données active. |
 | `FLUSHALL` | Supprime **toutes** les clés de **toutes** les bases de données. |
-
----
-
-## Contribution
-
-Toute suggestion, amélioration ou correction à ce guide est la bienvenue. N'hésitez pas à contribuer !
