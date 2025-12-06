@@ -26,8 +26,7 @@ Même avec une seule machine, on peut créer plusieurs serveurs MongoDB :
     27020),\
 -   chaque instance a son **propre dossier de données** (disk1, disk2,
     disk3),\
--   toutes les instances partagent le **même nom de Replica Set** (ex :
-    `monReplica`).
+-   toutes les instances partagent le **même nom de Replica Set** 
 
 C'est pratique pour s'entraîner comme si on avait une vraie petite
 infrastructure.
@@ -86,10 +85,3 @@ Pour voir comment MongoDB gère les pannes :
 3.  MongoDB élit automatiquement un **nouveau PRIMARY** parmi les
     SECONDARY.
 
-Cette élection automatique est l'un des points forts de MongoDB : le
-système continue de fonctionner même en cas de panne.
-
-------------------------------------------------------------------------
-
-Voilà ! Une version plus humaine et propre de ton explication, prête à
-être revue ou partagée.
