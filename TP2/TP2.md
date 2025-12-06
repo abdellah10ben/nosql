@@ -4,17 +4,17 @@
 ## 🔹 1. Pourquoi utiliser un Replica Set ?
 
 Un *Replica Set* permet d'avoir plusieurs copies d'une même base de
-données toujours synchronisées.\
+données toujours synchronisées.
 L'idée est simple : si un serveur tombe, un autre prend le relais sans
-perte de données.\
+perte de données.
 Grâce à ça, on obtient :
 
--   une meilleure disponibilité du service,\
--   une protection contre la perte de données,\
+-   une meilleure disponibilité du service,
+-   une protection contre la perte de données,
 -   un système plus fiable et tolérant aux pannes.
 
-Un Replica Set est composé d'un **PRIMARY** (le serveur principal) et de
-**SECONDARY** (serveurs qui répliquent les données).
+Un Replica Set est composé d'un **PRIMARY**  et de
+**SECONDARY**.
 
 ------------------------------------------------------------------------
 
@@ -23,9 +23,9 @@ Un Replica Set est composé d'un **PRIMARY** (le serveur principal) et de
 Même avec une seule machine, on peut créer plusieurs serveurs MongoDB :
 
 -   chaque instance utilise un **port différent** (ex : 27018, 27019,
-    27020),\
+    27020),
 -   chaque instance a son **propre dossier de données** (disk1, disk2,
-    disk3),\
+    disk3),
 -   toutes les instances partagent le **même nom de Replica Set** 
 
 C'est pratique pour s'entraîner comme si on avait une vraie petite
@@ -68,7 +68,7 @@ Ensuite on ajoute les autres serveurs :
 Une fois tout configuré :
 
 -   un serveur devient **PRIMARY** → c'est lui qui accepte les
-    écritures,\
+    écritures,
 -   les autres deviennent **SECONDARY** → ils répliquent les données et
     peuvent servir aux lectures (si configuré).
 
@@ -80,8 +80,8 @@ Les SECONDARY sont aussi là pour prendre le relais si le PRIMARY tombe.
 
 Pour voir comment MongoDB gère les pannes :
 
-1.  On insère une donnée dans le PRIMARY.\
-2.  On éteint le PRIMARY (CTRL+C).\
+1.  On insère une donnée dans le PRIMARY.
+2.  On éteint le PRIMARY (CTRL+C).
 3.  MongoDB élit automatiquement un **nouveau PRIMARY** parmi les
     SECONDARY.
 
