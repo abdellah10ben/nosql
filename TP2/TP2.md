@@ -39,8 +39,6 @@ Chaque serveur MongoDB se lance avec une commande comme :
 
     mongod --replSet monReplica --port PORT --dbpath DOSSIER
 
-Et il faut garder chaque terminal ouvert pour que les serveurs restent
-actifs.
 
 ------------------------------------------------------------------------
 
