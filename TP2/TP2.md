@@ -1,8 +1,4 @@
 # Comprendre simplement un Replica Set MongoDB
-
-Voici une version plus naturelle et fluide de tes notes, tout en gardant
-l'essentiel.
-
 ------------------------------------------------------------------------
 
 ## 🔹 1. Pourquoi utiliser un Replica Set ?
