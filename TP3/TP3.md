@@ -10,15 +10,6 @@
 
 ---
 
-## Introduction
-Lors des TPs précédents, nous avons étudié les bases de données NoSQL ainsi que leur rôle dans la montée en charge (scalabilité horizontale) et la tolérance aux pannes. Contrairement aux bases de données relationnelles classiques, les bases NoSQL sont conçues pour fonctionner sur un ensemble de machines distribuées.
-
-La réplication permet d’assurer la haute disponibilité des données en maintenant plusieurs copies synchronisées sur différents nœuds. Cependant, cette technique ne suffit pas lorsque le volume de données et le nombre de requêtes augmentent fortement, car l’ensemble des données reste stocké sur chaque nœud.
-
-Le partitionnement des données, aussi appelé **sharding**, permet de résoudre ce problème en répartissant les données sur plusieurs serveurs. Chaque serveur, appelé shard, ne contient qu’une partie des données, ce qui améliore les performances et permet une montée en charge efficace.
-
----
-
 ## Objectif du TP
 L’objectif de ce TP est de mettre en place un cluster MongoDB shardé, d’activer le sharding sur une base de données et une collection, puis d’analyser le fonctionnement du système ainsi que les concepts clés liés au partitionnement des données.
 
