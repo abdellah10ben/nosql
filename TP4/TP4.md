@@ -17,6 +17,32 @@ Ce TP a pour objectif de comprendre et manipuler le modèle **MapReduce** dans u
 
 ---
 
+---
+
+## Résumé Technique : Le SGBD CouchDB et le Modèle MapReduce
+
+Ces deux vidéos présentent l'utilisation de **CouchDB**, un système de gestion de base de données NoSQL orienté document, et l'implémentation de calculs distribués via le paradigme MapReduce.
+
+### 1. Fondamentaux de CouchDB
+CouchDB se distingue par sa simplicité d'accès et son architecture basée sur le web :
+- **Interface RESTful** : Toutes les opérations (création, lecture, mise à jour, suppression) s'effectuent via les verbes HTTP standards (**GET, PUT, POST, DELETE**).
+- **Modèle Documentaire** : Les données sont stockées au format **JSON**. Contrairement aux bases relationnelles, CouchDB permet d'imbriquer des structures complexes (ex: listes d'acteurs dans un film), favorisant la dénormalisation pour de meilleures performances de lecture.
+- **Gestion de la cohérence** : Le système privilégie la disponibilité et le passage à l'échelle (**scalability**). Il accepte une redondance des données pour garantir un service ininterrompu dans une infrastructure distribuée.
+
+### 2. Le Traitement de Données avec MapReduce
+CouchDB intègre un moteur de calcul parallèle pour traiter de gros volumes de données (**Big Data**) en deux étapes :
+- **La fonction Map** : Elle parcourt chaque document de manière indépendante pour extraire et transformer les données en "clés intermédiaires". C'est une phase de restructuration.
+- **La fonction Reduce** : Elle agrège les résultats produits par la fonction Map (ex: effectuer une somme ou un comptage) pour fournir un résultat final synthétique.
+
+
+
+### 3. Cas d'Usage Illustrés
+Le formateur démontre la puissance de ce modèle à travers des exemples concrets :
+- **Analyse par année** : Comptage automatique du nombre de films produits par an.
+- **Analyse par acteur** : Détermination de la filmographie de chaque acteur à partir de documents JSON complexes.
+
+---
+
 ## Partie 1 – Installation et utilisation de CouchDB
 
 ### 1) Mise en place de CouchDB avec Docker
