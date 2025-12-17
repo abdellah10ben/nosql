@@ -17,8 +17,6 @@ Ce TP a pour objectif de comprendre et manipuler le modèle **MapReduce** dans u
 
 ---
 
----
-
 ## Résumé Technique : Le SGBD CouchDB et le Modèle MapReduce
 
 Ces deux vidéos présentent l'utilisation de **CouchDB**, un système de gestion de base de données NoSQL orienté document, et l'implémentation de calculs distribués via le paradigme MapReduce.
