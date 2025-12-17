@@ -124,7 +124,4 @@ Un hot shard est un shard surchargé par un grand nombre de requêtes ou d’éc
 ## Conclusion
 Ce TP a permis de comprendre le principe du partitionnement des données sous MongoDB. Le sharding est une solution efficace pour assurer la montée en charge horizontale et améliorer les performances. Le choix d’une clé de sharding adaptée est un élément essentiel pour éviter les déséquilibres et garantir le bon fonctionnement du cluster.
 
----
-
-**Fin du TP**
 
