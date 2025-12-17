@@ -335,7 +335,7 @@ var reduceFilmNoteMax = function (key, values) {
 
 ## Conclusion
 Ce TP a permis de manipuler MapReduce dans deux environnements NoSQL :
-- **CouchDB**, où les vues MapReduce constituent un mécanisme central d’interrogation (vues persistantes),
+- **CouchDB**, où les vues MapReduce constituent un mécanisme central d’interrogation ,
 - **MongoDB**, où MapReduce permet de réaliser des agrégations distribuées via des fonctions `map` et `reduce`.
 
 Les exercices ont illustré des cas classiques : comptages, regroupements, calculs de moyennes et recherche de maximum.
