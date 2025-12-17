@@ -316,7 +316,4 @@ Ce TP a permis de manipuler MapReduce dans deux environnements NoSQL :
 
 Les exercices ont illustré des cas classiques : comptages, regroupements, calculs de moyennes et recherche de maximum.
 
----
-
-**Fin du TP4**
 
